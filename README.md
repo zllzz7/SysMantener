@@ -2,16 +2,16 @@
 
 El desarrollo de este ecosistema se basa en un stack tecnológico moderno, enfocado en el alto rendimiento y una estética corporativa de vanguardia:
 
-**Next.js 15 & React 19:** Motor principal del sistema para la gestión de rutas, renderizado optimizado y una arquitectura de componentes escalable.
-**JavaScript ES6+:** Lógica avanzada para la manipulación del DOM, gestión de estados e interactividad dinámica en tiempo real.
-**Tailwind CSS:** Framework de utilidades utilizado para construir una interfaz responsiva con un diseño de alta fidelidad y consistencia visual.
-**PostCSS:** Procesamiento de estilos de última generación para garantizar la compatibilidad y optimización de los recursos visuales.
-**HTML5 (Estructura Semántica):** Implementación de una base sólida y accesible, utilizando etiquetas semánticas para mejorar el SEO y la jerarquía de la información.
-**Glassmorphism Design:** Aplicación de efectos de transparencia y desenfoque (*backdrop-filter*) para lograr una estética moderna y premium.
+* *Next.js 15 & React 19:* Arquitectura moderna para un renderizado optimizado y gestión eficiente de rutas.
+* *JavaScript ES6+:* Lógica de interactividad, manipulación del DOM y efectos visuales dinámicos.
+* *Tailwind CSS & PostCSS:* Framework de utilidades para un diseño responsivo y procesamiento avanzado de estilos.
+* *Glassmorphism Design:* Estética de vanguardia con transparencias y desenfoques (backdrop-filter) de alta fidelidad.
+* *HTML5 Semántico:* Estructura de contenido optimizada para SEO y accesibilidad técnica.
+
 
 ## Descripcion
 
-*SysMantener* es un ecosistema digital de alto rendimiento diseñado para la gestión estratégica del mantenimiento y el aseguramiento operativo de infraestructuras críticas de cómputo. La plataforma integra estándares técnicos de vanguardia y protocolos de seguridad robustos, orientados a garantizar la continuidad operativa y la optimización de activos tecnológicos en entornos corporativos de alta demanda.
+**SysMantener** es un ecosistema digital de alto rendimiento diseñado para la gestión estratégica del mantenimiento y el aseguramiento operativo de infraestructuras críticas de cómputo. La plataforma integra estándares técnicos de vanguardia y protocolos de seguridad robustos, orientados a garantizar la continuidad operativa y la optimización de activos tecnológicos en entornos corporativos de alta demanda.
 
 ## Contenido 
 
