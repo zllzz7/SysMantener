@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento y Aseguramiento de Sistemas Informaticos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span>SysMantener</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#aseguramiento">Aseguramiento</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#buenas-practicas">Buenas Practicas</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Ecosistema IT
+            </div>
+            <h1 class="reveal">Mantenimiento y Aseguramiento de <span class="gradient-text">Sistemas Informaticos</span></h1>
+            <p class="hero-description reveal">Domina los principios esenciales para mantener los sistemas informaticos confiables, seguros y con rendimiento optimo. Explora estrategias preventivas, tecnicas de monitoreo y mejores practicas de la industria.</p>
+            <div class="hero-buttons reveal">
+                <a href="#resumen" class="btn btn-primary">
+                    <span>Explorar Temas</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#tipos" class="btn btn-secondary">Saber Mas</a>
+            </div>
+        </div>
+        <div class="hero-visual reveal">
+            <div class="visual-card">
+                <div class="card-header">
+                    <div class="card-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="card-title">Estado del Sistema</span>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <div class="status-icon green">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Salud CPU</span>
+                        <span class="status-value">98%</span>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-icon green">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Memoria</span>
+                        <span class="status-value">85%</span>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-icon yellow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 9V13M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Almacenamiento</span>
+                        <span class="status-value">72%</span>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-icon green">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Seguridad</span>
+                        <span class="status-value">Activa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Estadisticas -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="99.9">0</span>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Objetivo de Disponibilidad</p>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Reduccion de Tiempo Inactivo</p>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="40">0</span>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Ahorro de Costos</p>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="85">0</span>
+                    <span class="stat-suffix">%</span>
+                    <p class="stat-label">Prevencion de Problemas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Resumen -->
+    <section id="resumen" class="section overview">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Entendiendo los Conceptos Basicos</span>
+                <h2>Que es el <span class="gradient-text">Mantenimiento de Sistemas?</span></h2>
+                <p>El mantenimiento de sistemas informaticos abarca todas las actividades destinadas a mantener el hardware y software en condiciones optimas de funcionamiento, garantizando confiabilidad, seguridad y maximo rendimiento.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card large reveal">
+                    <div class="bento-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M19.4 15C19.1277 15.6171 19.2583 16.3378 19.73 16.82L19.79 16.88C20.1656 17.2551 20.3766 17.7642 20.3766 18.295C20.3766 18.8258 20.1656 19.3349 19.79 19.71C19.4149 20.0856 18.9058 20.2966 18.375 20.2966C17.8442 20.2966 17.3351 20.0856 16.96 19.71L16.9 19.65C16.4178 19.1783 15.6971 19.0477 15.08 19.32C14.4755 19.5791 14.0826 20.1724 14.08 20.83V21C14.08 22.1046 13.1846 23 12.08 23C10.9754 23 10.08 22.1046 10.08 21V20.91C10.0642 20.2327 9.63587 19.6339 9 19.4C8.38291 19.1277 7.66219 19.2583 7.18 19.73L7.12 19.79C6.74485 20.1656 6.23582 20.3766 5.705 20.3766C5.17418 20.3766 4.66515 20.1656 4.29 19.79C3.91445 19.4149 3.70343 18.9058 3.70343 18.375C3.70343 17.8442 3.91445 17.3351 4.29 16.96L4.35 16.9C4.82167 16.4178 4.95229 15.6971 4.68 15.08C4.42093 14.4755 3.82764 14.0826 3.17 14.08H3C1.89543 14.08 1 13.1846 1 12.08C1 10.9754 1.89543 10.08 3 10.08H3.09C3.76733 10.0642 4.36613 9.63587 4.6 9C4.87229 8.38291 4.74167 7.66219 4.27 7.18L4.21 7.12C3.83445 6.74485 3.62343 6.23582 3.62343 5.705C3.62343 5.17418 3.83445 4.66515 4.21 4.29C4.58515 3.91445 5.09418 3.70343 5.625 3.70343C6.15582 3.70343 6.66485 3.91445 7.04 4.29L7.1 4.35C7.58219 4.82167 8.30291 4.95229 8.92 4.68H9C9.60447 4.42093 9.99738 3.82764 10 3.17V3C10 1.89543 10.8954 1 12 1C13.1046 1 14 1.89543 14 3V3.09C14.0026 3.74764 14.3955 4.34093 15 4.6C15.6171 4.87229 16.3378 4.74167 16.82 4.27L16.88 4.21C17.2551 3.83445 17.7642 3.62343 18.295 3.62343C18.8258 3.62343 19.3349 3.83445 19.71 4.21C20.0856 4.58515 20.2966 5.09418 20.2966 5.625C20.2966 6.15582 20.0856 6.66485 19.71 7.04L19.65 7.1C19.1783 7.58219 19.0477 8.30291 19.32 8.92V9C19.5791 9.60447 20.1724 9.99738 20.83 10H21C22.1046 10 23 10.8954 23 12C23 13.1046 22.1046 14 21 14H20.91C20.2524 14.0026 19.6591 14.3955 19.4 15Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Configuracion del Sistema</h3>
+                    <p>Una configuracion adecuada garantiza que todos los componentes de hardware y software funcionen armoniosamente. Esto incluye ajustes del BIOS, instalacion de controladores y optimizacion de preferencias del sistema.</p>
+                    <div class="bento-visual">
+                        <div class="config-bars">
+                            <div class="config-bar" style="--width: 90%"></div>
+                            <div class="config-bar" style="--width: 75%"></div>
+                            <div class="config-bar" style="--width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-card reveal">
+                    <div class="bento-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Actualizaciones Regulares</h3>
+                    <p>Mantener los sistemas actualizados con parches de seguridad, actualizaciones de software y mejoras de firmware.</p>
+                </div>
+                <div class="bento-card reveal">
+                    <div class="bento-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S8 18 8 12V5L12 3L16 5V12C16 18 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Medidas de Seguridad</h3>
+                    <p>Implementar firewalls, software antivirus y controles de acceso para proteger los sistemas.</p>
+                </div>
+                <div class="bento-card wide reveal">
+                    <div class="bento-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Respaldo y Recuperacion</h3>
+                    <p>Crear copias de seguridad regulares de datos criticos y establecer procedimientos de recuperacion para minimizar la perdida de datos y asegurar la continuidad del negocio en caso de fallos del sistema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Importancia -->
+    <section class="section importance">
+        <div class="container">
+            <div class="importance-grid">
+                <div class="importance-content reveal">
+                    <span class="section-badge">Por Que Importa</span>
+                    <h2>La Importancia del <span class="gradient-text">Mantenimiento del Sistema</span></h2>
+                    <p>El mantenimiento regular es crucial para prevenir tiempos de inactividad costosos, extender la vida util del hardware y asegurar un rendimiento optimo. Sin un mantenimiento adecuado, los sistemas se vuelven vulnerables a fallos, brechas de seguridad y perdidas de eficiencia.</p>
+                    <ul class="importance-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Previene fallos inesperados del sistema y perdida de datos
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Extiende la vida util de los componentes de hardware
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Mantiene niveles optimos de rendimiento del sistema
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Reduce los costos operativos generales de TI
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Asegura el cumplimiento de estandares de seguridad
+                        </li>
+                    </ul>
+                </div>
+                <div class="importance-visual reveal">
+                    <div class="risk-chart">
+                        <div class="risk-item">
+                            <div class="risk-bar" style="--height: 90%">
+                                <span class="risk-value">90%</span>
+                            </div>
+                            <span class="risk-label">Sin Mantenimiento</span>
+                        </div>
+                        <div class="risk-item">
+                            <div class="risk-bar low" style="--height: 15%">
+                                <span class="risk-value">15%</span>
+                            </div>
+                            <span class="risk-label">Con Mantenimiento</span>
+                        </div>
+                    </div>
+                    <p class="chart-caption">Comparacion de Riesgo de Fallo del Sistema</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Tipos de Mantenimiento -->
+    <section id="tipos" class="section types">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Categorias</span>
+                <h2>Tipos de <span class="gradient-text">Mantenimiento de Sistemas</span></h2>
+                <p>Comprender los diferentes enfoques de mantenimiento ayuda a las organizaciones a desarrollar estrategias integrales para la confiabilidad del sistema.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon preventive">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Actividades de mantenimiento programadas realizadas antes de que ocurran problemas. Incluye limpieza regular, actualizaciones de software, desfragmentacion de disco e inspecciones de componentes para prevenir fallos.</p>
+                        <div class="timeline-tags">
+                            <span>Programado</span>
+                            <span>Proactivo</span>
+                            <span>Regular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon corrective">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.7 6.3C14.5 6.1 14.2 6 14 6H10C9.8 6 9.5 6.1 9.3 6.3L6.3 9.3C6.1 9.5 6 9.8 6 10V14C6 14.2 6.1 14.5 6.3 14.7L9.3 17.7C9.5 17.9 9.8 18 10 18H14C14.2 18 14.5 17.9 14.7 17.7L17.7 14.7C17.9 14.5 18 14.2 18 14V10C18 9.8 17.9 9.5 17.7 9.3L14.7 6.3Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 9V12M12 15H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Correctivo</h3>
+                        <p>Reparaciones y correcciones implementadas despues de detectar una falla o error. Este enfoque reactivo aborda los problemas a medida que surgen, restaurando los sistemas a su condicion de funcionamiento.</p>
+                        <div class="timeline-tags">
+                            <span>Reactivo</span>
+                            <span>Reparaciones</span>
+                            <span>Solucion de Problemas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon predictive">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Predictivo</h3>
+                        <p>Utiliza analisis de datos, herramientas de monitoreo e inteligencia artificial para predecir cuando podrian fallar los componentes. Este enfoque permite el mantenimiento antes de que ocurran fallos, optimizando la asignacion de recursos.</p>
+                        <div class="timeline-tags">
+                            <span>Basado en Datos</span>
+                            <span>IA/ML</span>
+                            <span>Pronostico</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon evolutionary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Evolutivo</h3>
+                        <p>Modificaciones y mejoras realizadas a los sistemas para adaptarse a requisitos cambiantes, nuevas tecnologias o necesidades de funcionalidad mejorada. Mantiene los sistemas actuales y competitivos.</p>
+                        <div class="timeline-tags">
+                            <span>Actualizaciones</span>
+                            <span>Mejoras</span>
+                            <span>Adaptacion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Aseguramiento del Sistema -->
+    <section id="aseguramiento" class="section assurance">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Confiabilidad y Seguridad</span>
+                <h2>Aseguramiento de la <span class="gradient-text">Operacion del Sistema</span></h2>
+                <p>Estrategias integrales para garantizar operaciones de sistema continuas, confiables y seguras.</p>
+            </div>
+            <div class="assurance-grid">
+                <div class="assurance-card reveal">
+                    <div class="assurance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 6V12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 8L5 8M4 2L4 5M8 2L8 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Sistemas de Monitoreo</h3>
+                    <p>Vigilancia continua del rendimiento del sistema, utilizacion de recursos y metricas de salud. Las alertas en tiempo real permiten una respuesta rapida a anomalias antes de que escalen a problemas criticos.</p>
+                    <div class="monitoring-visual">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring delay-1"></div>
+                        <div class="pulse-ring delay-2"></div>
+                    </div>
+                </div>
+                <div class="assurance-card reveal">
+                    <div class="assurance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S8 18 8 12V5L12 3L16 5V12C16 18 12 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Implementar medidas de seguridad multicapa incluyendo firewalls, sistemas de deteccion de intrusos, cifrado y controles de acceso para proteger contra amenazas y accesos no autorizados.</p>
+                    <div class="security-layers">
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+                <div class="assurance-card reveal">
+                    <div class="assurance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 14.899C4 14.899 4 19 8 19C12 19 12 14.899 12 14.899M12 14.899C12 14.899 12 19 16 19C20 19 20 14.899 20 14.899M12 14.899V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 9C4 9 4 5 8 5C12 5 12 9 12 9M12 9C12 9 12 5 16 5C20 5 20 9 20 9M12 9V14.899" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Respaldo y Recuperacion</h3>
+                    <p>Establecer estrategias de respaldo integrales con multiples puntos de recuperacion. Implementar planes de recuperacion ante desastres para asegurar la continuidad del negocio durante fallos inesperados del sistema.</p>
+                    <div class="backup-visual">
+                        <div class="backup-icon-visual">
+                            <div class="backup-doc"></div>
+                            <div class="backup-doc"></div>
+                            <div class="backup-doc"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="assurance-card reveal">
+                    <div class="assurance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Optimizacion</h3>
+                    <p>Ajuste continuo del rendimiento de componentes de hardware y software. Incluye asignacion de recursos, optimizacion de cache y eliminacion de cuellos de botella para maxima eficiencia.</p>
+                    <div class="optimization-bars">
+                        <div class="opt-bar" style="--delay: 0s"></div>
+                        <div class="opt-bar" style="--delay: 0.1s"></div>
+                        <div class="opt-bar" style="--delay: 0.2s"></div>
+                        <div class="opt-bar" style="--delay: 0.3s"></div>
+                    </div>
+                </div>
+                <div class="assurance-card wide reveal">
+                    <div class="assurance-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.29 3.86L1.82 18C1.64 18.3 1.56 18.64 1.56 19C1.56 20.1 2.46 21 3.56 21H20.46C21.56 21 22.46 20.1 22.46 19C22.46 18.64 22.38 18.3 22.2 18L13.73 3.86C13.36 3.27 12.7 2.91 12 2.91C11.3 2.91 10.64 3.27 10.29 3.86Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 9V13M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Gestion de Incidentes</h3>
+                    <p>Procesos estructurados para identificar, analizar y resolver incidentes del sistema. Incluye procedimientos de escalamiento, analisis de causa raiz y revisiones post-incidente para prevenir recurrencias y mejorar la confiabilidad general del sistema.</p>
+                    <div class="incident-flow">
+                        <div class="flow-step">Detectar</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Analizar</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Resolver</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Revisar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Herramientas -->
+    <section id="herramientas" class="section tools">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Software y Hardware</span>
+                <h2>Herramientas de <span class="gradient-text">Mantenimiento</span></h2>
+                <p>Herramientas y software esenciales utilizados por profesionales de TI para el mantenimiento y monitoreo de sistemas.</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 21H16M12 17V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4>Software de Monitoreo</h4>
+                    <p>Nagios, Zabbix, PRTG para monitoreo de sistemas en tiempo real</p>
+                </div>
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S8 18 8 12V5L12 3L16 5V12C16 18 12 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h4>Herramientas de Seguridad</h4>
+                    <p>Antivirus, firewalls, escaneadores de vulnerabilidades</p>
+                </div>
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M17 8L12 3L7 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h4>Soluciones de Respaldo</h4>
+                    <p>Veeam, Acronis, servicios de respaldo en la nube</p>
+                </div>
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Diagnosticos</h4>
+                    <p>Probadores de hardware, utilidades de disco, analizadores de memoria</p>
+                </div>
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h4>Automatizacion</h4>
+                    <p>Ansible, Puppet, Chef para tareas automatizadas</p>
+                </div>
+                <div class="tool-card reveal">
+                    <div class="tool-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3.27 6.96L12 12.01L20.73 6.96M12 22.08V12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h4>Gestion de Activos</h4>
+                    <p>CMDB, sistemas de seguimiento de inventario</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Buenas Practicas -->
+    <section id="buenas-practicas" class="section best-practices">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Directrices</span>
+                <h2>Buenas <span class="gradient-text">Practicas</span></h2>
+                <p>Estrategias probadas por la industria para el mantenimiento efectivo de sistemas y aseguramiento de operaciones.</p>
+            </div>
+            <div class="practices-grid">
+                <div class="practice-card reveal">
+                    <div class="practice-number">01</div>
+                    <h4>Documentar Todo</h4>
+                    <p>Mantener documentacion detallada de configuraciones del sistema, procedimientos de mantenimiento y respuestas a incidentes para compartir conocimientos y cumplimiento.</p>
+                </div>
+                <div class="practice-card reveal">
+                    <div class="practice-number">02</div>
+                    <h4>Programar Auditorias Regulares</h4>
+                    <p>Realizar auditorias periodicas del sistema para identificar vulnerabilidades, software obsoleto y brechas de cumplimiento antes de que se conviertan en problemas criticos.</p>
+                </div>
+                <div class="practice-card reveal">
+                    <div class="practice-number">03</div>
+                    <h4>Implementar Automatizacion</h4>
+                    <p>Automatizar tareas de mantenimiento repetitivas como respaldos, actualizaciones y monitoreo para reducir errores humanos y mejorar la eficiencia.</p>
+                </div>
+                <div class="practice-card reveal">
+                    <div class="practice-number">04</div>
+                    <h4>Capacitar a Tu Equipo</h4>
+                    <p>Asegurar que el personal de TI este continuamente capacitado en nuevas tecnologias, amenazas de seguridad y procedimientos de mantenimiento.</p>
+                </div>
+                <div class="practice-card reveal">
+                    <div class="practice-number">05</div>
+                    <h4>Probar Planes de Recuperacion</h4>
+                    <p>Probar regularmente los procedimientos de respaldo y recuperacion ante desastres para asegurar que funcionen cuando mas se necesitan.</p>
+                </div>
+                <div class="practice-card reveal">
+                    <div class="practice-number">06</div>
+                    <h4>Monitorear Proactivamente</h4>
+                    <p>Usar herramientas de monitoreo para detectar problemas temprano, analizar tendencias y predecir posibles fallos antes de que impacten las operaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Beneficios y Riesgos -->
+    <section class="section benefits-risks">
+        <div class="container">
+            <div class="br-grid">
+                <div class="br-card benefits reveal">
+                    <div class="br-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Beneficios</h3>
+                    </div>
+                    <ul>
+                        <li>Mayor confiabilidad y disponibilidad del sistema</li>
+                        <li>Postura de seguridad mejorada</li>
+                        <li>Reduccion de costos operativos</li>
+                        <li>Extension de vida util del hardware</li>
+                        <li>Mejor experiencia de usuario</li>
+                        <li>Cumplimiento de regulaciones</li>
+                        <li>Resolucion mas rapida de problemas</li>
+                        <li>Mayor productividad</li>
+                    </ul>
+                </div>
+                <div class="br-card risks reveal">
+                    <div class="br-header">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.29 3.86L1.82 18C1.64 18.3 1.56 18.64 1.56 19C1.56 20.1 2.46 21 3.56 21H20.46C21.56 21 22.46 20.1 22.46 19C22.46 18.64 22.38 18.3 22.2 18L13.73 3.86C13.36 3.27 12.7 2.91 12 2.91C11.3 2.91 10.64 3.27 10.29 3.86Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 9V13M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Riesgos de Negligencia</h3>
+                    </div>
+                    <ul>
+                        <li>Fallos inesperados del sistema</li>
+                        <li>Perdida y corrupcion de datos</li>
+                        <li>Brechas de seguridad</li>
+                        <li>Degradacion del rendimiento</li>
+                        <li>Aumento de costos de reparacion</li>
+                        <li>Interrupcion del negocio</li>
+                        <li>Violaciones de cumplimiento</li>
+                        <li>Dano a la reputacion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Conclusion -->
+    <section class="section conclusion">
+        <div class="container">
+            <div class="conclusion-card reveal">
+                <div class="conclusion-glow"></div>
+                <h2>Conclusion <span class="gradient-text"></span></h2>
+                <p>El mantenimiento y aseguramiento efectivo de las operaciones de sistemas informaticos no es simplemente una funcion de TI, es un imperativo estrategico para el exito organizacional. Al implementar estrategias integrales de mantenimiento preventivo, correctivo, predictivo y evolutivo, las organizaciones pueden garantizar la confiabilidad, seguridad y rendimiento optimo del sistema.</p>
+                <p>La integracion de herramientas de monitoreo automatizado, medidas robustas de ciberseguridad y procedimientos bien documentados crea una infraestructura de TI resiliente capaz de apoyar los objetivos comerciales mientras minimiza los riesgos. La inversion en practicas de mantenimiento adecuadas genera retornos significativos a traves de la reduccion del tiempo de inactividad, extension de la vida util del equipo y mejora de la eficiencia operativa.</p>
+                <p>A medida que la tecnologia continua evolucionando, mantenerse actualizado con las mejores practicas y herramientas emergentes sigue siendo esencial para los profesionales de TI comprometidos con la excelencia en la gestion de operaciones de sistemas.</p>
+                <div class="conclusion-signature">
+                    <span>SysMantener Lab</span>
+                    <span class="divider">|</span>
+                    <span>Mantenimiento de Sistemas Informaticos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Pagina -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>SysMantener</span>
+                    </div>
+                    <p>Un recurso sobre mantenimiento y aseguramiento de operaciones de sistemas informaticos.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Temas</h4>
+                        <a href="#resumen">Resumen</a>
+                        <a href="#tipos">Tipos de Mantenimiento</a>
+                        <a href="#aseguramiento">Aseguramiento del Sistema</a>
+                        <a href="#herramientas">Herramientas</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="#buenas-practicas">Buenas Practicas</a>
+                        <a href="#resumen">Documentacion</a>
+                        <a href="#herramientas">Software</a>
+                        <a href="#aseguramiento">Seguridad</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 SysMantener</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
